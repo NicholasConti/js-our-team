@@ -32,4 +32,12 @@ const team = [
         foto:'barbara-ramos-graphic-designer.jpg'
     }
 ];
-console.log(team);
+
+for (let i = 0; i < team.length; i++){
+    const currentObject = team[i];
+    console.log(`Membro numero ${i + 1}`);
+    for (let key in currentObject){
+        console.log(key);
+        console.log(currentObject[key]);
+    }
+}
