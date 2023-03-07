@@ -30,7 +30,6 @@ main{
 
 .member{
     list-style-type: none;
-    color: white;
     background-color: pink;
     width: calc((100% / 3) - .9375rem);
     text-align: center;
