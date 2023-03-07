@@ -46,9 +46,10 @@ function printCrad(arrayTeam, cardsHTML){
     for(let i = 0; i < arrayTeam.length; i++){
         const currentCard = cardsHTML[i];
         const currentObject = arrayTeam[i];
-        for (let key in currentObject){
-            currentCard.innerHTML += (`<li> ${currentObject[key]}</li>`);
-        } 
+        const img = document.createElement('img');
+        img.src = `img/${currentObject.foto}`
+        currentCard.append(img);
+        currentCard.innerHTML += (`<li> ${currentObject.nome}</li><li> ${currentObject.ruolo}</li>`);
     }
 }
 /**********
