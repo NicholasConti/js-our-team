@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    text-align: center;
+    padding: 1.25rem;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: .9375rem;
+}
+
+.member{
+    list-style-type: none;
+    color: white;
+    background-color: pink;
+    width: calc((100% / 3) - .9375rem);
+    text-align: center;
+    padding: .625rem;
+    border-radius: 1.25rem;
+}
+
+.member > li{
+    margin: .625rem 0;
+}
+
